@@ -1,6 +1,6 @@
 import matrix
 n = int(input("Введите количество состояний: "))
-print("Введите таблицу интенсивностей потоков:")
+print("Введите таблицу интенсивностей потоков: ")
 t = n * [n * [0]]
 for i in range(n):
 	t[i] = t[i].copy()
@@ -29,6 +29,6 @@ for i in range(n):
 a = matrix.MatrixType(am)
 b = matrix.MatrixType(bm)
 c = b.divide(a)
-print("Вероятности состояний:")
+print("Вероятности состояний: ")
 for i in range(1, n + 1):
 	print("p" + str(i) + "=" + str(c.elementAt(i, 1)))
